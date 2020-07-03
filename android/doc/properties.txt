@@ -1,0 +1,4 @@
+key.storePassword=12345678
+key.keyStorePath=..\\doc\\key.jks
+key.keyAlias=leavesc
+key.keyPassword=12345678
