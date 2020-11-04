@@ -1,15 +1,10 @@
-/**
- * 作者：leavesC
- * 时间：2019/10/20 20:30
- * 描述：
- * GitHub：https://github.com/leavesC
- * Blog：https://www.jianshu.com/u/9df45b87cfdf
- */
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_do/common/page.dart';
 
+///@Author: leavesC
+///@Date: 2020/11/4 16:02
+///@Desc:
 class GradientButton extends StatelessWidget {
   final double width;
   final double height;

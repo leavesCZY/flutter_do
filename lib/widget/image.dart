@@ -1,12 +1,10 @@
-/**
- * 作者：leavesC
- * 时间：2019/10/15 10:32
- * 描述：
- */
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_do/common/page.dart';
 
+///@Author: leavesC
+///@Date: 2020/11/4 16:31
+///@Desc:
 const url =
     "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571395288485&di=d475ea9a1c8920f291e1b65d60e46f58&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Fsinacn%2Fw640h380%2F20171224%2F4873-fypvuqf5294484.jpg";
 

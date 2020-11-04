@@ -1,12 +1,9 @@
-/**
- * 作者：leavesC
- * 时间：2019/10/18 10:45
- * 描述：
- */
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+///@Author: leavesC
+///@Date: 2020/11/4 16:02
+///@Desc:
 class ScaffoldPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -79,15 +76,15 @@ class _ScaffoldPageState extends State<ScaffoldPage>
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.message),
-            title: Text('Message'),
+            label: 'Message',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.contacts),
-            title: Text('Contacts'),
+            label: 'Contacts',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
-            title: Text('Settings'),
+            label: 'Settings',
           ),
         ],
         currentIndex: _selectedIndex,

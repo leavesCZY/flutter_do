@@ -1,11 +1,9 @@
-/**
- * 作者：leavesC
- * 时间：2019/10/23 12:08
- * 描述：
- */
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_do/common/page.dart';
 
+///@Author: leavesC
+///@Date: 2020/11/4 16:06
+///@Desc:
 class AnimationWidgetPage extends BaseDemoPage {
   AnimationWidgetPage() : super("AnimationWidget", includeScrollView: true);
 

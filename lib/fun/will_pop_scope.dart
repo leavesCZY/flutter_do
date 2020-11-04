@@ -1,13 +1,9 @@
-/**
- * 作者：leavesC
- * 时间：2019/10/20 10:56
- * 描述：
- * GitHub：https://github.com/leavesC
- * Blog：https://www.jianshu.com/u/9df45b87cfdf
- */
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+///@Author: leavesC
+///@Date: 2020/11/4 15:59
+///@Desc:
 class WillPopScopePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

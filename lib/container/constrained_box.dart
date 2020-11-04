@@ -1,13 +1,10 @@
-/**
- * 作者：leavesC
- * 时间：2019/10/18 9:37
- * 描述：
- */
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_do/common/page.dart';
 
+///@Author: leavesC
+///@Date: 2020/11/4 16:04
+///@Desc:
 class ConstrainedBoxPage extends BaseDemoPage {
   ConstrainedBoxPage() : super('ConstrainedBox');
 

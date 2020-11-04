@@ -1,12 +1,9 @@
-/**
- * 作者：leavesC
- * 时间：2019/10/23 11:42
- * 描述：
- */
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_do/common/page.dart';
 
+///@Author: leavesC
+///@Date: 2020/11/4 16:05
+///@Desc:
 class ScaleAnimationPage extends BaseDemoPage {
   ScaleAnimationPage() : super("ScaleAnimation", includeScrollView: true);
 

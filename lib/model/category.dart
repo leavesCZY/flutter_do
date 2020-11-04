@@ -1,8 +1,6 @@
-/**
- * 作者：leavesC
- * 时间：2019/10/22 9:31
- * 描述：
- */
+///@Author: leavesC
+///@Date: 2020/11/4 16:29
+///@Desc:
 class CategoryBean {
   final String name;
 

@@ -1,12 +1,10 @@
-/**
- * 作者：leavesC
- * 时间：2019/10/15 10:32
- * 描述：
- */
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_do/common/page.dart';
 
+///@Author: leavesC
+///@Date: 2020/11/4 16:33
+///@Desc:
 class ProgressPage extends BaseDemoPage {
   ProgressPage() : super('Progress', includeScrollView: true);
 

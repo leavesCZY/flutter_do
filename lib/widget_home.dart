@@ -1,15 +1,11 @@
-/**
- * 作者：leavesC
- * 时间：2019/10/21 9:50
- * 描述：
- */
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'routes/route.dart';
 
-Color bgColor = Colors.grey[200];
-
+///@Author: leavesC
+///@Date: 2020/11/4 16:34
+///@Desc:
 class WidgetHomePage extends StatefulWidget {
   final String category;
 
@@ -34,7 +30,7 @@ class _WidgetHomePageState extends State<WidgetHomePage> {
   Widget buildGridWidget() {
     var children = getWidgetList(category).children;
     return Container(
-      color: bgColor,
+      color: Colors.grey[200],
       margin: EdgeInsets.only(top: 0),
       child: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

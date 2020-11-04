@@ -1,14 +1,12 @@
 import 'dart:math';
 
-/**
- * 作者：leavesC
- * 时间：2019/10/16 12:14
- * 描述：
- */
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_do/common/page.dart';
 
+///@Author: leavesC
+///@Date: 2020/11/4 16:32
+///@Desc:
 class SimpleListViewPage extends BaseDemoPage {
   static final double itemExtent = 50;
 

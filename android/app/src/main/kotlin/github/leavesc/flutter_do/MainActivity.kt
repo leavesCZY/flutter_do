@@ -1,4 +1,4 @@
-package hello.leavesc.flutter_do
+package github.leavesc.flutter_do
 
 import android.os.Bundle
 
@@ -6,9 +6,9 @@ import io.flutter.app.FlutterActivity
 import io.flutter.plugins.GeneratedPluginRegistrant
 
 /**
- * 作者：leavesC
- * 时间：2019/10/15 10:19
- * 描述：
+ * @Author: leavesC
+ * @Date: 2020/11/4 16:35
+ * @Desc:
  */
 class MainActivity : FlutterActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

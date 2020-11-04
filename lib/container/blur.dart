@@ -1,13 +1,11 @@
 import 'dart:ui';
 
-/**
- * 作者：leavesC
- * 时间：2019/10/22 17:11
- * 描述：
- */
 import 'package:flutter/material.dart';
 import 'package:flutter_do/common/page.dart';
 
+///@Author: leavesC
+///@Date: 2020/11/4 16:04
+///@Desc:
 class BlurPage extends BaseDemoPage {
   BlurPage() : super("BlurPage", includeScrollView: false);
 

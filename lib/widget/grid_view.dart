@@ -1,12 +1,10 @@
-/**
- * 作者：leavesC
- * 时间：2019/10/16 12:10
- * 描述：
- */
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_do/common/page.dart';
 
+///@Author: leavesC
+///@Date: 2020/11/4 16:31
+///@Desc:
 class SimpleGridViewPage extends BaseDemoPage {
   SimpleGridViewPage() : super('Simple GridView', includeScrollView: false);
 

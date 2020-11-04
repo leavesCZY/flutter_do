@@ -1,13 +1,9 @@
-/**
- * 作者：leavesC
- * 时间：2019/10/20 12:11
- * 描述：
- * GitHub：https://github.com/leavesC
- * Blog：https://www.jianshu.com/u/9df45b87cfdf
- */
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+///@Author: leavesC
+///@Date: 2020/11/4 16:00
+///@Desc:
 class InheritedWidgetPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -35,68 +31,53 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    // This method is rerun every time setState is called, for instance as done
+    // by the _incrementCounter method above.
+    //
+    // The Flutter framework has been optimized to make rerunning build methods
+    // fast, so that you can just rebuild anything that needs updating rather
+    // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          widget.title,
-        ),
-        automaticallyImplyLeading: false,
+        // Here we take the value from the MyHomePage object that was created by
+        // the App.build method, and use it to set our appbar title.
+        title: Text(widget.title),
       ),
-      body: ShareDataWidget(
-        counter: _counter,
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text(
-                'You have pushed the button this many times:',
-              ),
-              _CounterWidget(),
-            ],
-          ),
+      body: Center(
+        // Center is a layout widget. It takes a single child and positions it
+        // in the middle of the parent.
+        child: Column(
+          // Column is also a layout widget. It takes a list of children and
+          // arranges them vertically. By default, it sizes itself to fit its
+          // children horizontally, and tries to be as tall as its parent.
+          //
+          // Invoke "debug painting" (press "p" in the console, choose the
+          // "Toggle Debug Paint" action from the Flutter Inspector in Android
+          // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
+          // to see the wireframe for each widget.
+          //
+          // Column has various properties to control how it sizes itself and
+          // how it positions its children. Here we use mainAxisAlignment to
+          // center the children vertically; the main axis here is the vertical
+          // axis because Columns are vertical (the cross axis would be
+          // horizontal).
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'You have pushed the button this many times:',
+            ),
+            Text(
+              '$_counter',
+              style: Theme.of(context).textTheme.headline4,
+            ),
+          ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: Icon(Icons.add),
-      ),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
-  }
-}
-
-class ShareDataWidget extends InheritedWidget {
-  final int counter;
-
-  ShareDataWidget({@required this.counter, @required Widget child})
-      : super(child: child);
-
-  static ShareDataWidget of(BuildContext context) {
-    return context.inheritFromWidgetOfExactType(ShareDataWidget);
-  }
-
-  @override
-  bool updateShouldNotify(ShareDataWidget old) {
-    return old.counter != counter;
-  }
-}
-
-class _CounterWidget extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    return _CounterWidgetState();
-  }
-}
-
-class _CounterWidgetState extends State<_CounterWidget> {
-  @override
-  Widget build(BuildContext context) {
-    return Text(ShareDataWidget.of(context).counter.toString());
-  }
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    print("didChangeDependencies");
   }
 }

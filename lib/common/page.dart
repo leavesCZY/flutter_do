@@ -1,12 +1,9 @@
-/**
- * 作者：leavesC
- * 时间：
- * 描述：
- * GitHub：https://github.com/leavesC
- */
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+///@Author: leavesC
+///@Date: 2020/11/4 16:01
+///@Desc:
 typedef BuildWidget = Widget Function(BuildContext context);
 
 abstract class BaseDemoPage extends StatelessWidget {

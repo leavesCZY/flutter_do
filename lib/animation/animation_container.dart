@@ -1,14 +1,11 @@
-/**
- * 作者：leavesC
- * 时间：2019/10/23 15:34
- * 描述：
- */
-
 import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_do/common/page.dart';
 
+///@Author: leavesC
+///@Date: 2020/11/4 16:06
+///@Desc:
 class AnimationContainerPage extends BaseDemoPage {
   AnimationContainerPage()
       : super("AnimationContainer", includeScrollView: false);

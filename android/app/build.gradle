@@ -53,6 +53,15 @@ apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "github.leavesc.flutter_do"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
     signingConfigs {
         release {
             storeFile storeFile_
@@ -71,21 +80,6 @@ android {
             v2SigningEnabled true
         }
     }
-    compileSdkVersion 29
-    sourceSets {
-        main.java.srcDirs += 'src/main/kotlin'
-    }
-    lintOptions {
-        disable 'InvalidPackage'
-    }
-    defaultConfig {
-        applicationId "hello.leavesc.flutter_do"
-        minSdkVersion 16
-        targetSdkVersion 29
-        versionCode flutterVersionCode.toInteger()
-        versionName flutterVersionName
-        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
-    }
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
@@ -93,6 +87,12 @@ android {
         release {
             signingConfig signingConfigs.release
         }
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+    lintOptions {
+        disable 'InvalidPackage'
     }
 }
 
@@ -102,7 +102,7 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    testImplementation 'junit:junit:4.13'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
