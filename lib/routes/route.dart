@@ -1,6 +1,5 @@
 import 'dart:core';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_do/animation/animation_container.dart';
 import 'package:flutter_do/animation/animation_widget.dart';
